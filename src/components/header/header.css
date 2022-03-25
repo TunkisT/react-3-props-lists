@@ -1,0 +1,19 @@
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: whitesmoke;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+header a{
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.logo{
+    font-size: 2rem;
+}
