@@ -1,21 +1,17 @@
 import './header.css';
 
-function Header() {
+function Header(props) {
   return (
     <header>
       <a href='/' className='logo'>
         REACT
       </a>
       <nav>
-        <a href='/' className='nav-link'>
-          Home
-        </a>
-        <a href='/' className='nav-link'>
-          About
-        </a>
-        <a href='/' className='nav-link'>
-          Contact us
-        </a>
+        {props.navData.map((navObj) => (
+          <a key={navObj.title} href={navObj.link} className='nav-link'>
+            {navObj.title}
+          </a>
+        ))}
       </nav>
     </header>
   );

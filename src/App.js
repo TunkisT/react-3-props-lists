@@ -9,10 +9,17 @@ const heroSectionData = {
   btnText: 'Learn more',
 };
 
+const navData = [
+  { link: '#home', title: 'Home' },
+  { link: '#about', title: 'About' },
+  { link: '#contact', title: 'Contact us' },
+  { link: '#tech', title: 'Tech news' },
+];
+
 function App(props) {
   return (
     <div className='App'>
-      <Header />
+      <Header navData={navData} />
       <HeroSection data={heroSectionData} />
       <IconCardSection />
     </div>
